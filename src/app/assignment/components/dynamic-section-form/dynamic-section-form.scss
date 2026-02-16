@@ -1,0 +1,137 @@
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.numbers-legend {
+  display: flex;
+  gap: 15px;
+
+  & button {
+    background-color: #cca6a6;
+    border: 1px  red;
+    border-radius: 10px;
+
+      transition:
+      background-color 0.25s ease,
+      color 0.25s ease,
+      box-shadow 0.25s ease,
+      transform 0.2s cubic-bezier(.4,0,.2,1);
+
+    will-change: transform;
+
+  }
+
+  
+  & .remove:not(:disabled) {
+    background-color: #ff0000;
+    color: rgba(102, 1, 1, 0.473);
+    &:hover {
+      box-shadow: 3px 2px #860000;
+      scale: 120%;
+
+    }
+  }
+
+  & button:active {
+    transform: scale(0.95);
+  }
+}
+
+.numbers {
+  & input {
+    margin-top: 10px;
+    height: 25px;
+    width: 300px;
+  }
+
+  & button {
+    height: 25px;
+    border: 1px solid rgb(185, 0, 0);
+    margin-left: 5px;
+
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease,
+      box-shadow 0.25s ease,
+      transform 0.2s cubic-bezier(.4,0,.2,1);
+
+    will-change: transform;
+  }
+
+  & button:not(:disabled) {
+    background-color: firebrick;
+    color: white;
+  }
+
+  & button:active {
+    transform: scale(0.9); 
+  }
+
+  & button:hover:not(:disabled) {
+    box-shadow: 3px 2px #800000;
+    transform: scale(1.25);
+  }
+}
+
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.total {
+  font-size:larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.section-number {
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: firebrick;
+  
+}
+
+.add-section {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: firebrick;
+  color: whitesmoke;
+  border: 2px solid #4444;
+  border-radius: 5px;
+  &:active {
+    scale: 85%;
+  }
+      &:hover {
+      box-shadow: 3px 2px #860000;
+      transform: scale(1.1);
+      background-color: whitesmoke;
+      color: firebrick;
+    }
+
+    
+    transition: 
+    background-color 0.25s ease-in-out,
+    color 0.25s ease-in-out,
+    box-shadow 0.25s ease-in-out,
+    transform 0.1s cubic-bezier(.4,0,.2,1);
+
+  will-change: transform;
+
+}
+
+#add-input {
+  background-color: rgb(214, 121, 0);
+  color:whitesmoke ;
+  
+}
+
+.main-form {
+  padding-top: 30px;
+  background-color:rgba(255, 182, 192, 0.678);
+}

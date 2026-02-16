@@ -1,0 +1,30 @@
+<nav>
+  <ul class="app-cmp-nav">
+        <li class="has-sub">
+      <a routerLink="./profile"> Profile ▼</a>
+
+      <ul class="sub-menu">
+        <li>
+          <a routerLink="./profile/view"> View </a>
+        </li>
+        <li>
+          <a routerLink="./profile/form"> Form </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="has-sub">
+      <a routerLink="./assignment"> Assignment▼</a>
+      <ul class="sub-menu">
+        <li>
+          <a routerLink="./assignment/view"> View </a>
+        </li>
+        <li>
+          <a routerLink="./assignment/form"> Form </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet />

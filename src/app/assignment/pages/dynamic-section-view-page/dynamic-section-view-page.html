@@ -1,0 +1,7 @@
+@if (dataResource.hasValue()) {
+  @if (dataResource.value(); as data) {
+    <app-dynamic-section-view [sections]="data"></app-dynamic-section-view>
+  } @else {
+    <p>Not Found</p>
+  }
+}

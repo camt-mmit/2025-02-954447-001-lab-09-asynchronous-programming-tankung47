@@ -1,0 +1,80 @@
+.section-view {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 2000px;
+  margin: 10px auto; 
+
+  gap: 20px;
+  align-items: center;
+}
+
+.section-number {
+  font-weight: 900;
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: firebrick;
+}
+
+.section-numbers {
+  font-weight: 400;
+  font-size: medium;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.section {
+  border: 1px  rgb(255, 128, 128);
+  border-radius: 10px;
+  width: 15%;
+  padding: 12px;
+  background-color:rgba(255, 182, 192, 0.678);
+  color: #5a0000;
+  transition:
+    transform 0.25s cubic-bezier(.4,0,.2,1),
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    color 0.25s ease;
+  will-change: transform;
+}
+.section:hover {
+  transform: scale(1.05);
+  background-color: firebrick;
+  color: #ffffff;
+  padding: 12px 30px;
+}
+
+.section:hover .total {
+  color: #ffffff;
+}
+
+.section:hover .section-numbers {
+  background-color: rgb(255, 221, 227);
+  color: rgb(107, 0, 0);
+}
+
+.section:hover .section-number {
+  color: white;
+}
+
+.total {
+  font-size: large;
+  font-weight: bold;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.number-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right {
+  text-align: right;
+  font-weight: bold; 
+}

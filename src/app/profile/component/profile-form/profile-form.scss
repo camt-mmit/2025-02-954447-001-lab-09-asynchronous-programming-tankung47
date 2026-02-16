@@ -1,0 +1,18 @@
+.form-self-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  margin-bottom: 5%;
+}
+
+.main-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.friend-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

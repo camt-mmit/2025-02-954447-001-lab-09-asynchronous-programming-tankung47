@@ -1,0 +1,38 @@
+<fieldset [disabled]="" class="main-form">
+  <legend>
+    <button type="button" (click)="createSection()" class="add-section">Add Section +</button>
+  </legend>
+  <!-- {{ inputForm().value() | json }} -->
+  <div class="form-section">
+    @for (section of inputForm; track section; let si = $index) {
+      <!-- This is section{{ section().value() | json }} -->
+      <div>
+        <fieldset [disabled]="">
+          <legend>
+            <div class="numbers-legend">
+              <b class="section-number">Section {{ si + 1 }}</b>
+              <button [disabled]="$count === 1" (click)="removeSection(si)" class="remove">
+                X
+              </button>
+              <button type="button" (click)="addInput(si)" id="add-input">Add input</button>
+            </div>
+          </legend>
+
+          <div class="input-form">
+            @for (number of section; track number; let i = $index) {
+              <div class="numbers">
+                <input type="number" [formField]="number" />
+                <button type="button" [disabled]="$count === 1" (click)="removeNumber(si, i)">
+                  X
+                </button>
+              </div>
+            }
+          </div>
+        </fieldset>
+        <div>
+          <span class="total">Result : {{ total()[$index] | number }}</span>
+        </div>
+      </div>
+    }
+  </div>
+</fieldset>
